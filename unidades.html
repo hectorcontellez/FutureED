@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <title>Medidas</title>
+</head>
+<body>
+    <!--
+        Tamaño de letra = 12
+        90% = 0.9
+        Entonces:
+        0.9 * 12 = 10.8
+        --------------------
+        Tamaño de letra = 20
+        Body: 20 puntos x 2em = 40 puntos
+        Párrafo 1: 40 puntos x 0.8em = 32 puntos
+        Párrafo 1: 40 puntos x 1em = 40 puntos
+        Párrafo 1: 40 puntos x 1.3em = 52 puntos
+    -->
+    <style>
+        body {
+            font-size: 2em;
+            font-family: 'Satisfy', cursive;
+            color: blue;
+        }
+    </style>
+    Unidades de Medidas Relativas
+    <p style="font-size: 08.em;" >Párrafo 1</p>
+    <p style="font-size: 1em;" >Párrafo 2</p>
+    <p style="font-size: 1.3em;" >Párrafo 3</p>
+
+    <!--
+        Pulgada (in) = 2.54 cm
+        Centimetros (cm)
+        Milimetros (mm)
+        Puntos (pt) = 0.35 mm
+        Pica (pc) = 4.23 mm ó 12 pt
+    -->
+    <style>
+        body {
+            margin: 0.5in;
+        }
+        h1 {
+            line-height: 2cm;
+        }
+        p {
+            word-spacing: 4mm;
+        }
+        a {
+            font-size: 12pt;
+        }
+        span {
+            font-size: 1pc;
+        }
+    </style>
+</body>
+</html>

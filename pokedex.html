@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylepokedex.css">
     <title>PokeDex</title>
 </head>
     <body>
         <header>
-            <img id="Logo" src="./img/logo.png" alt="Logo" width="200">
+            <img id="Logo" src="./img/logo.png" alt="Logo">
             <h1> PokéDex </h1>
         </header>
 
@@ -17,6 +18,8 @@
             <a href="#">Acerca de...</a>
         </nav>
 
+        <hr>
+
         <main>
             <!-- #region Todo el Pokedex -->
             <div id="pokedex">
@@ -24,12 +27,15 @@
                 <!-- #region Izquierda del Pokedex-->
                 <div id="izquierda">
                     <!-- #region Pantalla visualizara el Pokemon-->
-                    <div id="pantalla">
+                    <div class="pantalla">
                         <!-- #region Aqui se mostrara la imagen del Pokemon-->
-                        <img id="img-pokemon" src="/img/logo-practica.png" alt="pokemon">
+                        <img id="img-pokemon" src="/img/lugia.png" alt="pokemon">
                     </div>
                     <!-- #region Botón tipo Cruzeta-->
                     <div id="cruceta"> </div>
+                        <div id="cruceta-arriba"></div>
+                        <div id="cruceta-horizontal"></div>
+                        <div id="cruceta-abajo"></div>
                     <!-- #region Botón Circular-->
                     <div id="btn-circular"> </div>
                 </div> <!-- FIN de Región IZQUIERDA -->
@@ -37,13 +43,13 @@
                 <!-- #region Derecha del Pokedex-->
                 <div id="derecha">
                     <!-- #region Pantalla visualizara la info del Pokemon-->
-                    <div id="pantalla">
+                    <div class="pantalla">
                         <ul>
-                            <li><p><b>Nombre:</b></p></li>
-                            <li><p><b>Tipo:</b></p></li>
-                            <li><p><b>Altura:</b></p></li>
-                            <li><p><b>Peso:</b></p></li>
-                            <li><p><b>Descripción:</b></p></li>
+                            <li><p><b>Nombre:</b>Lugia</p></li>
+                            <li><p><b>Tipo:</b>Legendario</p></li>
+                            <li><p><b>Altura:</b>5.2 m</p></li>
+                            <li><p><b>Peso:</b>216 kg</p></li>
+                            <li><p><b>Descripción:</b>La fuerza que tiene Lugia en las alas es devastadora es capaz de derribar edificios enteros. </p></li>
                         </ul>
                     </div>
                     <!-- #region Los 8 Botones-->
