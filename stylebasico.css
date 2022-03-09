@@ -1,0 +1,43 @@
+body {
+    background-color:darkseagreen;
+}
+
+.my-image {
+    width: 150px;
+    height: 150px;
+    padding: auto;
+}
+
+button {
+    background-color: #333;
+    color: white;
+}
+
+button:hover {
+    background-color: darkgreen;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(115, 163, 115);
+}
