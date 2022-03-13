@@ -6,6 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos Responsivos</title>
     <style>
+        /*  Medios en los que se aplica los estilos y son:
+            all    - Todos los tipos de medios o dispositivos
+            print  - Impresoras
+            screen - Pantallas de Ordenador, Tablets, Telefonos Moviles
+            speech - Lectores de Pantalla
+        */
+
+        /* Las pantallas que tiene 360px de ancho o menos, el color es Rojo */
         @media only screen and (max-width: 360px) {
             body {
                 background-color: red;
@@ -15,6 +23,7 @@
             }
         }
 
+        /* Las pantallas que tiene 768px de ancho o menos, el color es Naranja */
         @media only screen and (min-width: 768px) {
             body {
                 background-color: orange;

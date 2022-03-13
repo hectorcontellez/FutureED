@@ -1,0 +1,27 @@
+body {
+    background-color: indigo;
+}
+
+header {
+    background-color: chartreuse;
+}
+
+nav {
+    background-color: darkgreen;
+}
+
+section {
+    background-color: darkorange;
+}
+
+article {
+    background-color: darkmagenta;
+}
+
+aside {
+    background-color: darkturquoise;
+}
+
+footer {
+    background-color: darkred;
+}
