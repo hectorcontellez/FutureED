@@ -1,27 +1,74 @@
-body {
-    background-color: indigo;
-}
+h1 {
+    padding-bottom: 20px;
+    /* font-size: 48px; */
+    color: white;
+    font-size: 44px;
+    font-weight: normal;
+    text-transform: uppercase;
+  }
 
-header {
-    background-color: chartreuse;
-}
+/* Navbar */
+#navbar {
+    overflow: auto;
+  }
 
-nav {
-    background-color: darkgreen;
-}
+  #navbar .logo{
+    float: left;
+    padding-top: 20px;
+  }
 
-section {
-    background-color: darkorange;
-}
+  #navbar ul{
+    list-style: none;
+    float: right;
+  }
 
-article {
-    background-color: darkmagenta;
-}
+  #navbar ul li {
+    float: left;
+  }
 
-aside {
-    background-color: darkturquoise;
-}
+  #navbar ul li a {
+    display: block;
+    padding: 20px;
+    text-align: center;
+  }
 
-footer {
-    background-color: darkred;
-}
+  #navbar ul li a:hover,
+  #navbar ul li a.current {
+    background: var(--main-color);
+    color: #707070;
+  }
+
+  /* Showcase */
+#showcase-home {
+    background-image: url("/img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 40vh;
+    padding: 50px;
+  }
+
+  #showcase {
+    background: var(--primary-color);
+    height: 40vh;
+    padding: 50px;
+  }
+
+  #showcase .showcase-banner,
+  #showcase-home .showcase-banner{
+    background: var(--secondary-color);
+    height: 100%;
+    width: 60%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  #showcase-home .showcase-banner {
+    opacity: 0.9;
+  }
+
+  #showcase h1,
+  #showcase-home h1 {
+    padding: 30px;
+  }
