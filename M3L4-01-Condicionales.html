@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Sentencia IF */
+        let x = 100;
+        if(x > 50){
+            x /= 10;
+        }
+        console.log("Si 100 es mayor a 50, dividelo entre 10 y es: ",x);
+
+        /* Sentencia IF-Else */
+        let hora = 9;
+        if (hora >= 12) {
+            saludo = "Buenas tardes";
+        } else {
+            saludo = "Buenos días";
+        }
+        console.log(saludo);
+
+        /* Sentencia else if */
+        let hora2 = 21;
+        if (hora2 < 12) {
+            saludo = "Buenas días";
+        } else if (hora2 < 18) {
+            saludo = "Buenas tardes";
+        } else {
+            saludo = "Buenas noches";
+        }
+        console.log(saludo);
+
+        /* Ejemplo con Pokemon */
+        let squirtle_ataque = 40;
+        let charmander_ataque = 50;
+        console.log("Squirtle   PK: ",squirtle_ataque);
+        console.log("Charmander PK: ",charmander_ataque);
+        if (charmander_ataque > squirtle_ataque) {
+            ganador = "Charmander gana";
+        } else if (charmander_ataque < squirtle_ataque) {
+            ganador = "Squirtle gana";
+        } else {
+            ganador = "Empate";
+        }
+        console.log(ganador);
+    </script>
+</body>
+</html>

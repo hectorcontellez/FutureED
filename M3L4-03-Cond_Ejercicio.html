@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Ejercicio - Compras con descuento */
+
+        /* Asignacion de valores y suma */
+        edad_cliente = 25;
+        precio_producto_1 = 1000;
+        precio_producto_2 = 200;
+        precio_producto_3 = 300;
+        total = precio_producto_1 + precio_producto_2 + precio_producto_3;
+
+        /* Se muestra la información */
+        console.log("Edad  de clientes: ",edad_cliente);
+        console.log("Precio producto 1: $",precio_producto_1);
+        console.log("Precio producto 2: $",precio_producto_2);
+        console.log("Precio producto 3: $",precio_producto_3);
+        console.log("El  total  compra: $",total);
+
+        /* Se realiza las condicionales para determinal el descuento */
+        if (edad_cliente < 21 && total > 1000) {
+            descuento = .40;
+        }else if (edad_cliente > 21 && total >= 1000) {
+            descuento = .30;
+        }else if(edad_cliente > 21 && total < 999){
+            descuento = .10;
+        }
+
+        /* Calculo de descuento y suma finales */
+        importe_de_descuento = total * descuento;
+        total_con_descuento = total - importe_de_descuento;
+
+        /* Se muestra la informacion de Totales */
+        console.log("Obtienes un",descuento*100,"% de descuento");
+        console.log("Descuento: $", importe_de_descuento);
+        console.log("Total a Pagar es $",total_con_descuento);
+    </script>
+</body>
+</html>
