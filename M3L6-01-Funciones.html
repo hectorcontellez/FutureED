@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Se crea la función */
+        function CalcularAreaPentagono(longitud, apotema) {
+            let perimetro = 5 * longitud;
+            let area = (perimetro * apotema) / 2;
+            return area
+        }
+
+        /* Funcion que suma dos unidades a un valor */
+        function sumar_dos(numero){
+            return numero + 2;
+        }
+
+        /* Funcion Numero aleatorio */
+        function numeroAletorio() {
+            return Math.floor(Math.random()*11);
+        }
+
+        /* Se calculan los valores */
+        areaPentagono1 = CalcularAreaPentagono(10, 8.66);
+        console.log(areaPentagono1);
+        areaPentagono2 = CalcularAreaPentagono(1.5, 1.03);
+        console.log(areaPentagono2);
+        areaPentagono3 = CalcularAreaPentagono(6, 5);
+        console.log(areaPentagono3);
+        areaPentagono4 = CalcularAreaPentagono(18, 2.6);
+        console.log(areaPentagono4);
+        areaPentagono5 = CalcularAreaPentagono(5, 3.4);
+        console.log(areaPentagono5);
+
+        /* Suma de dos unidades a un numero con una funcion */
+        console.log("Número mas 2: ",sumar_dos(3));
+
+        /* Uso de la función aleatorio */
+        console.log("Número aleatorio: ",numeroAletorio());
+
+    </script>
+</body>
+</html>

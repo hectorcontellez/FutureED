@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Interacción</title>
+</head>
+<body>
+
+    <h3>Elemento getElementById</h3>
+    <p id="frase">
+        Haz click en uno de los tres textos de abajo...
+    </p>
+    <a onclick="elegirPokemon('Lugia')">Lugia</a>
+    <a onclick="elegirPokemon('Pikachu')">Pikachu</a>
+    <a onclick="elegirPokemon('Charmander')">Charmander</a>
+    <script>
+        function elegirPokemon(pokemon) {
+            document.getElementById('frase').innerHTML = '¡' + pokemon + ' yo te elijo!';
+        }
+    </script>
+
+    <h3>Cambio de contenido</h3>
+    <p id="parrafo">¡Hola Mundo!</p>
+    <script>
+        document.getElementById("parrafo").innerHTML = "¡Hola Mexico!";
+    </script>
+
+    <h3>Identificando elementos HTML por ID</h3>
+    <p id="intro">¡Hola Mundo!</p>
+    <p>Utilizaremos el método 'getElementById'</p>
+    <p id="demo"></p>
+    <script>
+        var MiElemento = document.getElementById("intro");
+        document.getElementById("demo").innerHTML = "El texto del párrafo 'Intro' es" + MiElemento.innerHTML;
+    </script>
+
+    <h3>Identificas elementos HTML por Etiquetas</h3>
+    <p>Hola Mundo con Etiqueta</p>
+    <p>Utilizaremos el método 'getElementByTagName'</p>
+    <p id="demo2"></p>
+    <script>
+        var Etiquetas = document.getElementsByTagName("p");
+        console.log(Etiquetas);
+        document.getElementById("demo2").innerHTML = "El texto del primer parrafo es: " + Etiquetas[5].innerHTML;
+    </script>
+
+    <h3>Identificando elementos HTML por clase</h3>
+    <p class="intro5">Hola Mundo con Clase</p>
+    <p class="intro5">Utilizaremos el método 'getElementsByClassName'</p>
+    <p id="demo5"></p>
+    <script>
+        var clase = document.getElementsByClassName("intro5");
+        document.getElementById("demo5").innerHTML = "El texto del segundo parrafo con la 2da clase es: " + clase[1].innerHTML;
+    </script>
+
+    <h3>Identificando elementos HTML por selectores CSS</h3>
+    <p class="intro6">Hola mundo con Selectores</p>
+    <p class="Intro6">Utilizaremos el método 'querySelectorAll'</p>
+    <p id="demo6"></p>
+    <script>
+        var etiquetaClase = document.querySelectorAll("p.intro");
+        document.getElementById("demo6").innerHTML = "El texto del primer parrafo con la clase intro es: " + etiquetaClase[0].innerHTML;
+    </script>
+
+    <h3>Identificando elementos HTML por document.forms</h3>
+    <form id="formulario" action="/">
+        Nombre: <input type="text" name="nombre" value="Juan"><br>
+        Apellido: <input type="text" name="apellido" value="Pérez"><br>
+    </form>
+    <button onclick="mostrarDatos()">Preciona para imprimir los valores del formulario</button>
+    <p id="demo7"></p>
+    <script>
+        function mostrarDatos(){
+            let x = document.forms["formulario"];
+            let texto = "";
+            for (let i = 0; i < x.length; i++) {
+                texto += x.elements[i].value + "<br>";
+            }
+            document.getElementById("demo7").innerHTML = texto;
+        }
+    </script>
+
+    <h3>Fecha</h3>
+    <script>
+        document.write(Date());
+    </script>
+
+    <h3>Modificación de Atributos</h3>
+    <h2>Imagen de Lugia</h2>
+    <img src="/img/lugia.png" alt="Lugia" id="imagen" width="300px">
+    <script>
+        document.getElementById("imagen").src = "/img/logo.png"
+    </script>
+
+    <h3>Permite modificas una clase de cuaquier elemento</h3>
+    <style>
+        .miClase {
+            width: 100%;
+            padding: 15px;
+            background-color: red;
+            color: white;
+            font-size: 15px;
+        }
+    </style>
+    <h4>Agregar Clase</h4>
+    <div id="miElemento">
+        Este elemento originalmente no tiene clase
+    </div>
+    <button onclick="agregar()">Agregar clase</button>
+    <button onclick="quitar()">Quitar clase</button>
+    <script>
+        function agregar() {
+            var elemento = document.getElementById("miElemento");
+            elemento.classList.add("miClase");
+        }
+        function quitar() {
+            var elemento = document.getElementById("miElemento");
+            elemento.classList.remove("miClase");
+        }
+    </script>
+
+    <h3>Event Listener (Eventos)</h3>
+    <button id="miBoton">Probar</button>
+    <script>
+        /* Precionar click en el boton */
+        document.getElementById("miBoton").addEventListener("click",function(){
+            alert("Hola mundo1");
+        });
+        /* Precionar una segunda vez click en el boton */
+        document.getElementById("miBoton").addEventListener("click",function(){
+            alert("Hola mundo 2");
+        });
+        /* Cuando pase encima el puntero de mouse */
+        document.getElementById("miBoton").addEventListener("mouseover",function(){
+            alert("Hola mundo Sobre");
+        });
+        /* Mouse entra al boton y se aleja de el */
+        document.getElementById("miBoton").addEventListener("mouseout",function(){
+            alert("Hola mundo Fuera");
+        });
+    </script>
+
+</body>
+</html>

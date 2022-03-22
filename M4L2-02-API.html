@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo PokeAPI</title>
+</head>
+<body>
+    <h1>Pokemon</h1>
+    <ul id="pokemon"></ul>
+    <script>
+        const ul = document.getElementById("pokemon");
+        const url = "https://pokeapi.co/api/v2/pokemon/";
+        let pokemon = "lugia";
+        fetch(url + pokemon)
+        .then(function(response){
+            return response.json();
+        })
+        .then(function(data){
+            // Aqui trabajamos la información
+            let li = crearNodo("li");
+            let img = crearNodo("img");
+            let nombre = crearNodo("span");
+            let id = crearNodo("span");
+            img.src = data.sprites.front_default;
+            id.innerHTML= data.id + " - ";
+            nombre.innerHTML = data.name;
+            adjuntar(li, img);
+            adjuntar(li, id);
+            adjuntar(li, nombre);
+            adjuntar(ul, li);
+        })
+        .catch(function(error){
+            console.log(error);
+        });
+        function crearNodo(elemento){
+            return document.createElement(elemento);
+        }
+        function adjuntar(padre, hijo){
+            return padre.appendChild(hijo);
+        }
+    </script>
+</body>
+</html>

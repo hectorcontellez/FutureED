@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* Declarar un objeto array con mínimo 5 datos */
+        var matriz = ["Lunes","Martes","Miercoles","Jueves","Viernes"];
+        /* Almacenar la longitud del array en una variable e imprimir su valor utilizando el método console.log */
+        var tamano = matriz.length;
+        console.log(matriz);
+        console.log(tamano);
+        /* Acceder a la posición 3 de array e imprimir su valor utilizando el método console.log */
+        let elemento3 = matriz[2];
+        /* Recorrer todos los elementos del array con el uso de bucle for e imprimir sus valores */
+        console.log(elemento3);
+        for(i=0;i<tamano;i++){
+            console.log("Elemento",i+1," es:", matriz[i]);
+        }
+        /* Cambiar el valor de la posición 2 del array */
+        matriz[1] = "Tuesday";
+        console.log(matriz);
+        /* Agregar un elemento al final del array */
+        matriz.push = "Sabado";
+        console.log(matriz);
+    </script>
+</body>
+</html>
