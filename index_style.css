@@ -1,3 +1,11 @@
+body{
+  background-color: #EEEEEE;
+}
+
+.logoFuture {
+  width: 250px;
+}
+
 h1 {
     padding-bottom: 20px;
     /* font-size: 48px; */
@@ -40,7 +48,7 @@ h1 {
 
   /* Showcase */
 #showcase-home {
-    background-image: url("/img/fondo.jpg");
+    background-image: url("/img/fondo-head.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -62,6 +70,7 @@ h1 {
     margin: auto;
     padding-top: 40px;
     text-align: center;
+    font-family: 'Lobster', cursive;
   }
 
   #showcase-home .showcase-banner {
@@ -72,3 +81,43 @@ h1 {
   #showcase-home h1 {
     padding: 30px;
   }
+
+  a {
+    color: #1C658C;
+    text-decoration: none;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 30.0%;
+    margin-right: 0.625%;
+    text-align: center;
+    line-height: 3;
+  }
+
+  ol {
+    column-count: 3;
+  }
+
+  .proyectos ul {
+    list-style-type: none;
+  }
+
+  .proyectos li {
+    text-align: center;
+    float:none;
+    background-color: #F6E3CA;
+    margin-right: 20px;
+    border: #D7C8B6 2px solid;
+  }
+
+  .proyectos {
+    background-color: #398AB9;
+  }
+
+  footer {
+    color: #1C658C;
+    height: 50px;
+    text-align: center;
+    background-color: #D8D2CB;
+  }
+
