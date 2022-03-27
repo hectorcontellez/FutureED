@@ -48,12 +48,8 @@ h1 {
 
   /* Showcase */
 #showcase-home {
-<<<<<<< HEAD
     background-image: url("./img/fondo-head.jpg");
     padding: 10px;
-=======
-    background-image: url("/img/fondo-head.jpg");
->>>>>>> 3cc49510c949dc34f1d7018c018359688ed9b0cd
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
